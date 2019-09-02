@@ -1,7 +1,8 @@
-from  xlutils.copy import copy
+import os
+
 import xlrd
 import xlwt
-import os
+from xlutils.copy import copy
 
 path_i = os.getcwd()
 path = path_i. replace('\\','/')+'/'
@@ -66,7 +67,3 @@ for n in range(1,table.nrows):
     #data={'class_name':class_name,'date_time':date_time,'teacher_name':teacher_name,'lesson_name':lesson_name}
     #all_data.append(data)
     write_excel(teacher_name,class_name,date_time,lesson_name)
-
-
-
-
